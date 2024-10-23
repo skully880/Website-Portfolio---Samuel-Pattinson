@@ -1,0 +1,251 @@
+/*1 - GLOBAL*/
+
+/*Global reset*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+body, html {
+    height: 100%;
+}
+
+
+/*2 - NAVBAR*/
+
+/*Navbar container*/
+nav {
+    /* Alignment */
+    height: 70px;               /*Height of navbar*/
+    display: flex;              /*Creates flex box*/
+    justify-content: center;    /*Horz aligns flex items to center*/
+    align-items: center;        /*Vert aligns flex items to center*/
+
+    /*Fix navbar to top of screen*/
+    position: fixed;    /*Fixed in place*/
+    top: 0;             /*Distance from top of margin*/
+    width: 100%;        /*Full width of screen*/
+    
+    /*Keeps navbar fixed to the front (1 is default)*/
+    z-index: 2;
+
+    /* Navbar color */
+    background-image: linear-gradient(black, rgb(22, 22, 22));
+}
+
+/*Navbar anchors (links)*/
+nav a {
+    text-decoration: none;  /*Removes underlines*/
+    padding: 1.5rem;        /*Padding between text*/
+    font-size: 1.25rem;     /*Size of text*/
+
+    /*Text color*/
+    color: #fff; 
+}
+
+/*Hover over navbar anchors*/
+nav a:hover {
+    color: #55a7d6;
+}
+
+
+/*3 - HOMEPAGE HERO*/
+
+/*Homepage Hero*/
+.hero-image {
+    /*Background image source*/
+    background-image: url('Aurora.jpg');    
+
+    /*Position and center image to scale on all screens*/
+    height: 850px;                  /*Height is 850 pixels of web page*/
+    background-position: center;    /*Position image centre on page*/
+    background-repeat: no-repeat;   /*Makes sure image doesn't repeat itself*/
+    background-size: cover;         /*Image covers container (in frame)*/
+    position: relative;             /*Position is relative - Space is allocated for the image container*/
+    margin-top: 70px;               /*Relative offset: margin is 70px from the top (for navbar)*/
+}
+
+.hero-text {
+    /*Text formatting*/
+    text-align: center;                 /*Align text to centre*/
+    position: absolute;                 /*Position is absolute - No space is allocated for the text container, but is within the image container*/
+
+    /*Positioning*/
+    transform: translate(-50%, -50%);   /*Translation of object*/
+    /*Since the x starts at the left side of the border, x is moved -50% so the centre of the container is at the left edge of the page*/
+    /*Since the y starts at the top of the border, y is moved -50% so the centre of the container is at the top edge of the page*/
+    top: 400px;                         /*Distance from centre of object to top of page - 850/2 = 425px, rounded to 400px*/
+    left: 50%;                          /*Distance from centre of object to left of page (50% being centre)*/
+
+    /*Text color is white*/
+    color: white;
+}
+
+.hero-text h1 {
+    /*Text size (double than standard 1.5rem*/
+    font-size: 3rem; 
+}
+
+.hero-text p {
+    font-size: 1.5rem;  /*Font size*/
+    padding: 1.5rem;    /*Padding from surround elements*/
+}
+
+.hero-text button {
+    /*Button design*/
+    background-image: linear-gradient(black, rgb(47, 47, 47));  /*Button color w/ gradient*/
+    border: none;           /*Remove default edges of button, default is brownish*/
+    border-radius: 10px;    /*Rounding of button edges*/
+    text-decoration: none;
+
+    /*Alignment*/
+    position: relative;
+    padding: 10px 20px;     /*Padding within button*/
+    cursor: pointer;        /*Ensures mouse becomes pointer when hovering*/
+    display: inline-block;  /*Allows multiple buttons on the same line*/
+
+    /*Font*/
+    color: white;     /*Text color*/
+    font-size: 1rem;    /*Font size*/
+}
+
+.hero-text button:hover {
+    /*Text color when hovering on button*/
+    color: #55a7d6;
+}
+
+.hero-text img {
+    /*Alignment*/
+    position: relative;
+    top: 10px;
+    height: 50px;
+    cursor: pointer;
+    display: inline-block;  /*Allows multiple icons on the same line*/
+}
+
+
+/*4 - OVERVIEW*/
+
+.textbox {
+    background-color: white;
+    border: solid;
+    padding: 30px;
+
+
+    margin-top: 2%;
+    margin-left: 2%;
+
+    height: 300px;
+    width: 500px;
+    
+    display: inline-block;
+    position: relative;
+    background-position: center;
+
+}
+
+.imagebox {
+    
+    
+    margin-top: 2%;
+    height: 300px;
+
+    position: relative;
+    display: flex;
+}   
+
+/*This acts as the row's CSS*/
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*This is what made the image and text center*/
+    display: center;
+}
+
+/*Footer*/
+.footer {
+    text-align: center;
+    padding: 5px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    margin-top: 2%;
+
+}
+
+.quote {
+    color: rgb(202, 202, 202);
+    width: auto;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+
+    padding: 50px;
+
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    padding: 30px;
+
+    
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+
+
+}
+
+.quote p {
+    z-index: 1;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.aboutme-p {
+    width: auto;
+
+    border: solid;
+    color: grey;
+
+    background-color: white;
+
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+    text-align: center;
+    padding: 10px;
+
+}
+
+.aboutme-p p {
+    color: black;
+}
+
+/*Homepage Hero About*/
+.hero-image-about {
+    /*Background image source*/
+    background-image: url('aboutmepic.jpg');
+
+    /*Set specific height, as % of image height*/
+    height: 75%;
+
+    /*Position and center image to scale on all screens*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    /*Moved down for navbar*/
+    margin-top: 80px;
+
+
+    opacity: 1;
+}
