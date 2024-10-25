@@ -17,7 +17,7 @@ body, html {
 
 /*Navbar container*/
 nav {
-    /* Alignment */
+    /*Alignment*/
     height: 70px;               /*Height of navbar*/
     display: flex;              /*Creates flex box*/
     justify-content: center;    /*Horz aligns flex items to center*/
@@ -31,32 +31,32 @@ nav {
     /*Keeps navbar fixed to the front (1 is default)*/
     z-index: 2;
 
-    /* Navbar color */
-    background-image: linear-gradient(black, rgb(22, 22, 22));
+    /*Navbar color gradient*/
+    background-image: linear-gradient(rgb(11, 11, 11), rgb(26, 26, 26));
 }
 
-/*Navbar anchors (links)*/
+/*Navbar anchors*/
 nav a {
     text-decoration: none;  /*Removes underlines*/
-    padding: 1.5rem;        /*Padding between text*/
-    font-size: 1.25rem;     /*Size of text*/
+    padding: 1.5rem;        /*Padding of text items*/
+    font-size: 1.25rem;     /*Font size of text*/
 
     /*Text color*/
     color: #fff; 
 }
 
-/*Hover over navbar anchors*/
+/*Navbar anchor hover*/
 nav a:hover {
     color: #55a7d6;
 }
 
 
-/*3 - HOMEPAGE HERO*/
+/*3 - BANNER */
 
 /*Homepage Hero*/
-.hero-image {
+.banner {
     /*Background image source*/
-    background-image: url('Aurora.jpg');    
+    background-image: url('images/banner-aurora.jpg');    
 
     /*Position and center image to scale on all screens*/
     height: 850px;                  /*Height is 850 pixels of web page*/
@@ -67,7 +67,7 @@ nav a:hover {
     margin-top: 70px;               /*Relative offset: margin is 70px from the top (for navbar)*/
 }
 
-.hero-text {
+.banner-text {
     /*Text formatting*/
     text-align: center;                 /*Align text to centre*/
     position: absolute;                 /*Position is absolute - No space is allocated for the text container, but is within the image container*/
@@ -83,17 +83,17 @@ nav a:hover {
     color: white;
 }
 
-.hero-text h1 {
+.banner-text h1 {
     /*Text size (double than standard 1.5rem*/
     font-size: 3rem; 
 }
 
-.hero-text p {
+.banner-text p {
     font-size: 1.5rem;  /*Font size*/
     padding: 1.5rem;    /*Padding from surround elements*/
 }
 
-.hero-text button {
+.banner-text button {
     /*Button design*/
     background-image: linear-gradient(black, rgb(47, 47, 47));  /*Button color w/ gradient*/
     border: none;           /*Remove default edges of button, default is brownish*/
@@ -111,19 +111,27 @@ nav a:hover {
     font-size: 1rem;    /*Font size*/
 }
 
-.hero-text button:hover {
+.banner-text button:hover {
     /*Text color when hovering on button*/
     color: #55a7d6;
 }
 
-.hero-text img {
+.platform-links a{
+    text-decoration: none; /*Gets rid of that wierd link underscore between images*/
+}
+
+.platform-links img {
     /*Alignment*/
     position: relative;
+    display: block;
     top: 10px;
     height: 50px;
+    padding: 5px;
     cursor: pointer;
     display: inline-block;  /*Allows multiple icons on the same line*/
 }
+
+
 
 
 /*4 - OVERVIEW*/
