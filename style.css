@@ -85,6 +85,16 @@ nav a:hover {
     background-image: url('images/banner-space.jpeg');   
 }
 
+#banner-scenic {
+    /*Background image source*/
+    background-image: url('images/banner-scenic.jpeg');   
+}
+
+#banner-horizon {
+    /*Background image source*/
+    background-image: url('images/banner-horizon.jpeg');   
+}
+
 /*Home banner text*/
 
 #home-banner-text {
@@ -176,6 +186,39 @@ nav a:hover {
     font-size: 4rem;
 }
 
+/*Portfolio banner*/
+#portfolio-banner-text {
+    position: absolute;
+    text-align: center;
+
+    color: white;
+    padding: 2rem;
+
+    transform: translate(-50%, -50%);   
+    top: 50%;
+    left: 50%;
+}
+
+#portfolio-banner-text h1 {
+    font-size: 4rem;
+}
+
+/*Contact banner*/
+#contact-banner-text {
+    position: absolute;
+    text-align: center;
+
+    color: white;
+    padding: 2rem;
+
+    transform: translate(-50%, -50%);   
+    top: 50%;
+    left: 50%;
+}
+
+#contact-banner-text h1 {
+    font-size: 4rem;
+}
 
 
 
@@ -190,6 +233,5 @@ nav a:hover {
     margin-top: 2%;
 }
 
+
 /*----------About---------*/
-
-
