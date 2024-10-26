@@ -54,11 +54,8 @@ nav a:hover {
 
 /*2 - BANNER */
 
-/*Homepage Hero*/
-.banner {
-    /*Background image source*/
-    background-image: url('images/banner-aurora.jpg');    
-
+/*Hoe banner positioning*/
+.banner1 {
     /*Position and center image to scale on all screens*/
     height: 850px;                  /*Height is 850 pixels of web page*/
     background-position: center;    /*Position image centre on page*/
@@ -68,28 +65,50 @@ nav a:hover {
     margin-top: 70px;               /*Relative offset: margin is 70px from the top (for navbar)*/
 }
 
-.banner-text {
+.banner2 {
+    /*Position and center image to scale on all screens*/
+    height: 600px;                  /*Height is 850 pixels of web page*/
+    background-position: center;    /*Position image centre on page*/
+    background-repeat: no-repeat;   /*Makes sure image doesn't repeat itself*/
+    background-size: cover;         /*Image covers container (in frame)*/
+    position: relative;             /*Position is relative - Space is allocated for the image container*/
+    margin-top: 70px;               /*Relative offset: margin is 70px from the top (for navbar)*/
+}
+
+#banner-aurora {
+    /*Background image source*/
+    background-image: url('images/banner-aurora.jpg');    
+}
+
+#banner-earth {
+    /*Background image source*/
+    background-image: url('images/banner-space.jpeg');   
+}
+
+/*Home banner text*/
+
+#home-banner-text {
     /*Text formatting*/
     text-align: center;                 /*Align text to centre*/
     position: absolute;                 /*Position is absolute - No space is allocated for the text container, but is within the image container*/
 
     /*Positioning*/
-    transform: translate(-50%, -50%);   /*Translation of object*/
+    transform: translate(-50%, -50%);   
     /*Since the x starts at the left side of the border, x is moved -50% so the centre of the container is at the left edge of the page*/
     /*Since the y starts at the top of the border, y is moved -50% so the centre of the container is at the top edge of the page*/
-    top: 400px;                         /*Distance from centre of object to top of page - 850/2 = 425px, rounded to 400px*/
-    left: 50%;                          /*Distance from centre of object to left of page (50% being centre)*/
+    top: 400px; 
+    left: 50%;
 
     /*Text color is white*/
     color: white;
 }
 
-.banner-text h1 {
+#home-banner-text h1 {
     /*Text size (double than standard 1.5rem*/
-    font-size: 3rem; 
+    font-size: 4rem; 
 }
 
-.banner-text p {
+#home-banner-text p {
     font-size: 1.5rem;  /*Font size*/
     padding: 1.5rem;    /*Padding from surround elements*/
     border: solid;
@@ -97,7 +116,9 @@ nav a:hover {
     border-radius: 30px;
 }
 
-.banner-text button {
+/*Home Banner button*/
+
+#home-banner-text button {
     /*Button design*/
     background-image: linear-gradient(black, rgb(47, 47, 47));  /*Button color w/ gradient*/
     border: none;           /*Remove default edges of button, default is brownish*/
@@ -115,10 +136,12 @@ nav a:hover {
     font-size: 1rem;    /*Font size*/
 }
 
-.banner-text button:hover {
+#home-banner-text button:hover {
     /*Text color when hovering on button*/
     color: #55a7d6;
 }
+
+/*Icons and links*/
 
 .platform-links a{
     text-decoration: none; /*Gets rid of that wierd link underscore between images*/
@@ -134,6 +157,26 @@ nav a:hover {
     cursor: pointer;
     display: inline-block;  /*Allows multiple icons on the same line*/
 }
+
+/*About banner*/
+
+#about-banner-text {
+    position: absolute;
+    text-align: center;
+
+    color: white;
+    padding: 2rem;
+
+    transform: translate(-50%, -50%);   
+    top: 50%;
+    left: 50%;
+}
+
+#about-banner-text h1 {
+    font-size: 4rem;
+}
+
+
 
 /*3 - OVERVIEW*/
 
@@ -155,168 +198,3 @@ nav a:hover {
 /*----------About---------*/
 
 
-
-.quote {
-    color: rgb(202, 202, 202);
-    width: auto;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-    position: relative;
-
-    padding: 50px;
-
-    background-color: rgb(255, 255, 255);
-    border: solid;
-    padding: 30px;
-
-    
-    margin-top: 2%;
-    margin-bottom: 2%;
-    margin-left: 20%;
-    margin-right: 20%;
-
-
-}
-
-.quote p {
-    z-index: 1;
-    color: black;
-    font-size: 1.2rem;
-}
-
-.aboutme-p {
-    width: auto;
-
-    border: solid;
-    color: grey;
-
-    background-color: white;
-
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-
-    text-align: center;
-    padding: 10px;
-
-}
-
-.aboutme-p p {
-    color: black;
-}
-
-/*Homepage Hero About*/
-.hero-image-about {
-    /*Background image source*/
-    background-image: url('aboutmepic.jpg');
-
-    /*Set specific height, as % of image height*/
-    height: 75%;
-
-    /*Position and center image to scale on all screens*/
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-
-    /*Moved down for navbar*/
-    margin-top: 80px;
-
-
-    opacity: 1;
-}
-
-/* SLIDESHOW */
-
-* {box-sizing: border-box}
-
-/* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
-    z-index: 5;
-}
-
-/* Hide images by default */
-.mySlides {
-    display: none;
-}
-
-/*Next & Previous Buttons*/
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    margin-top: -22px;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-}
-
-/* position the next button to the right */
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-/*on hover, add a black background color with a little bit see-through*/
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/*Caption text*/
-.text {
-    color: #f2f2f2;
-    font-size: 15px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
-}
-
-/*Number test (1/3 etc)*/
-.numbertext {
-    color: white;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-}
-
-/*The dots/bullets/indicators*/
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-    background-color: #717171;
-}
-
-/*fading animation*/
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
-}
