@@ -19,6 +19,7 @@ Contain atleast 4 different html pages
 
 Use atleast 10 different html tags
 > Besides html, head, body, title
+> meta, link, header, nav, div, a, main, h1, h2, p, br, footer
 
 Integrate one or more Bootstrap features into the site
 
@@ -31,5 +32,5 @@ Have atleast one CSS file of my own creating
 Integrate one or more features of JavaScript into the site
 > e.g. add alerts, add effect, add interactivity/dropdowns/forms
 
-ENsure site looks nice across browsers and mobile devices
+Ensure site looks nice across browsers and mobile devices
 > Desktop, laptop, tablet, mobile
