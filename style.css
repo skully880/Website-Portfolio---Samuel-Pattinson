@@ -1,4 +1,4 @@
-/*1 - GLOBAL*/
+/*GLOBAL*/
 
 /*Global reset*/
 * {
@@ -12,8 +12,9 @@ body, html {
     height: 100%;
 }
 
+/*----------Home---------*/
 
-/*2 - NAVBAR*/
+/*1 - NAVBAR*/
 
 /*Navbar container*/
 nav {
@@ -51,7 +52,7 @@ nav a:hover {
 }
 
 
-/*3 - BANNER */
+/*2 - BANNER */
 
 /*Homepage Hero*/
 .banner {
@@ -91,6 +92,9 @@ nav a:hover {
 .banner-text p {
     font-size: 1.5rem;  /*Font size*/
     padding: 1.5rem;    /*Padding from surround elements*/
+    border: solid;
+    border-width: 1px;
+    border-radius: 30px;
 }
 
 .banner-text button {
@@ -131,48 +135,13 @@ nav a:hover {
     display: inline-block;  /*Allows multiple icons on the same line*/
 }
 
+/*3 - OVERVIEW*/
 
 
 
-/*4 - OVERVIEW*/
-
-.textbox {
-    background-color: white;
-    border: solid;
-    padding: 30px;
 
 
-    margin-top: 2%;
-    margin-left: 2%;
-
-    height: 300px;
-    width: 500px;
-    
-    display: inline-block;
-    position: relative;
-    background-position: center;
-
-}
-
-.imagebox {
-    
-    
-    margin-top: 2%;
-    height: 300px;
-
-    position: relative;
-    display: flex;
-}   
-
-/*This acts as the row's CSS*/
-.projects {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    /*This is what made the image and text center*/
-    display: center;
-}
+/*4 - FOOTER*/
 
 /*Footer*/
 .footer {
@@ -181,8 +150,11 @@ nav a:hover {
     background-color: #1e1e1e;
     color: #ffffff;
     margin-top: 2%;
-
 }
+
+/*----------About---------*/
+
+
 
 .quote {
     color: rgb(202, 202, 202);
