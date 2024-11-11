@@ -17,49 +17,74 @@
 <body>
     <!-- Navigation section -->
     <header>
-        <nav>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
+        <nav class="navbar navbar-expand-lg bg-black">
+            <div class="container-fluid">
+                <a href="index.html" class="navbar-brand text-white">Samuel Pattinson</a>
+                <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active text-white">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link text-white">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="portfolio.html" class="nav-link text-white">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contact.html" class="nav-link text-white">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
 
+    <!--
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    -->
 
     <!-- Main section -->
     <main>
         <!--Banner-->
-        <div class="banner1" id="banner-aurora">
+        <div class="banner" id="banner1">
             <!--Nest text/button/icons on top of image-->
             <div id="home-banner-text">
                 <!--Intro text-->
                 <h2>Hi there, I'm</h2>
                 <h1>Samuel Pattinson</h1>
-                <p>
-                    I'm a passionate programmer with an exciting portfolio of projects!
-                    <br>See below to discover more about what i've been working on
-                </p>
-                
-                <!--Button-->
-                <a href="#">
-                    <button class="download">Download my CV</button>
-                </a>
-                
-                <!--Icons-->
-                <div class="platform-links">
-                    <a href="https://github.com/skully880">
-                        <img src="images\github-mark-white.png">
-                    </a>
-                    <a href="https://www.linkedin.com/in/s-pattinson/">
-                        <img src="images\linkedin-white.png">
-                    </a>
-                    <a href="https://www.youtube.com/@Skully880">
-                        <img src="images\youtube-white.png">
-                    </a>
-                </div>
             </div>
+        </div>
+
+        <p>
+            I'm a passionate programmer with an exciting portfolio of projects!
+            <br>See below to discover more about what i've been working on
+        </p>
+        
+        <!--Button-->
+        <a href="#">
+            <button class="download">Download my CV</button>
+        </a>
+        
+        <!--Icons-->
+        <div class="platform-links">
+            <a href="https://github.com/skully880">
+                <img src="images\github-mark-white.png">
+            </a>
+            <a href="https://www.linkedin.com/in/s-pattinson/">
+                <img src="images\linkedin-white.png">
+            </a>
+            <a href="https://www.youtube.com/@Skully880">
+                <img src="images\youtube-white.png">
+            </a>
         </div>
 
         <!-- Overview cards x3 w/ Bootstrap -->
