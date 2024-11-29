@@ -1,4 +1,4 @@
-/*GLOBAL*/
+/*--------------------------------GLOBAL--------------------------------------*/
 
 /*Global reset*/
 * {
@@ -12,164 +12,59 @@ body, html {
     height: 100%;
 }
 
-/*----------Home---------*/
+/*-------------------------------HOME/BANNER----------------------------------*/
 
-/*1 - NAVBAR*/
-
-/*Navbar container*/
-nav {
-    /*Alignment*/
-    height: 70px;               /*Height of navbar*/
-    display: flex;              /*Creates flex box*/
-    justify-content: center;    /*Horz aligns flex items to center*/
-    align-items: center;        /*Vert aligns flex items to center*/
-
-    /*Fix navbar to top of screen*/
-    position: fixed;    /*Fixed in place*/
-    top: 0;             /*Distance from top of margin*/
-    width: 100%;        /*Full width of screen*/
-    
-    /*Keeps navbar fixed to the front (1 is default)*/
-    z-index: 2;
-
-    /*Navbar color gradient*/
-    background-image: linear-gradient(rgb(11, 11, 11), rgb(26, 26, 26));
-}
-
-/*Navbar anchors*/
-nav a {
-    text-decoration: none;  /*Removes underlines*/
-    padding: 1.5rem;        /*Padding of text items*/
-    font-size: 1.25rem;     /*Font size of text*/
-
-    /*Text color*/
-    color: #fff; 
-}
-
-/*Navbar anchor hover*/
-nav a:hover {
-    color: #55a7d6;
-}
-
-
-/*2 - BANNER */
-
-/*Hoe banner positioning*/
-.banner1 {
-    /*Position and center image to scale on all screens*/
-    height: 850px;                  /*Height is 850 pixels of web page*/
-    background-position: center;    /*Position image centre on page*/
-    background-repeat: no-repeat;   /*Makes sure image doesn't repeat itself*/
-    background-size: cover;         /*Image covers container (in frame)*/
-    position: relative;             /*Position is relative - Space is allocated for the image container*/
-    margin-top: 70px;               /*Relative offset: margin is 70px from the top (for navbar)*/
-}
-
-.banner2 {
-    /*Position and center image to scale on all screens*/
+/*Banner positioning*/
+.banner {
     height: 600px;                  /*Height is 850 pixels of web page*/
     background-position: center;    /*Position image centre on page*/
     background-repeat: no-repeat;   /*Makes sure image doesn't repeat itself*/
     background-size: cover;         /*Image covers container (in frame)*/
-    position: relative;             /*Position is relative - Space is allocated for the image container*/
-    margin-top: 70px;               /*Relative offset: margin is 70px from the top (for navbar)*/
+    position: static;               /*Position is relative*/
 }
 
-#banner-aurora {
+/*Banner images*/
+#banner-image-aurora {
     /*Background image source*/
-    background-image: url('');    
+    background-image: url(images/placeholder.jpg);  
 }
 
-#banner-earth {
+#banner-image-earth {
     /*Background image source*/
-    background-image: url('');   
+    background-image: url(images/placeholder.jpg);   
 }
 
-#banner-scenic {
+#banner-image-scenic {
     /*Background image source*/
-    background-image: url('');   
+    background-image: url(images/placeholder.jpg);   
 }
 
-#banner-horizon {
+#banner-image-horizon {
     /*Background image source*/
-    background-image: url('');   
+    background-image: url(images/placeholder.jpg);   
 }
 
-/*Home banner text*/
-
-#home-banner-text {
-    /*Text formatting*/
+#home-text {
     text-align: center;                 /*Align text to centre*/
-    position: absolute;                 /*Position is absolute - No space is allocated for the text container, but is within the image container*/
-
-    /*Positioning*/
-    transform: translate(-50%, -50%);   
-    /*Since the x starts at the left side of the border, x is moved -50% so the centre of the container is at the left edge of the page*/
-    /*Since the y starts at the top of the border, y is moved -50% so the centre of the container is at the top edge of the page*/
-    top: 400px; 
-    left: 50%;
-
-    /*Text color is white*/
-    color: white;
+    position: relative;                 /*Position is absolute*/
+    margin-top: 180px; 
+    margin-left: auto;
+    margin-right: auto;
+    color: white;                     /*Text color is white*/
 }
 
-#home-banner-text h1 {
-    /*Text size (double than standard 1.5rem*/
-    font-size: 4rem; 
+#home-text h1 {
+    font-size: 4rem;                    /*Text size*/
 }
 
-#home-banner-text p {
-    font-size: 1.5rem;  /*Font size*/
-    padding: 1.5rem;    /*Padding from surround elements*/
-    border: solid;
-    border-width: 1px;
-    border-radius: 30px;
+#home-text p {
+    font-size: 1.5rem;                  /*Font size*/
 }
 
-/*Home Banner button*/
+/*------------------------------ABOUT/BANNER----------------------------------*/
 
-#home-banner-text button {
-    /*Button design*/
-    background-image: linear-gradient(black, rgb(47, 47, 47));  /*Button color w/ gradient*/
-    border: none;           /*Remove default edges of button, default is brownish*/
-    border-radius: 10px;    /*Rounding of button edges*/
-    text-decoration: none;
-
-    /*Alignment*/
-    position: relative;
-    padding: 10px 20px;     /*Padding within button*/
-    cursor: pointer;        /*Ensures mouse becomes pointer when hovering*/
-    display: inline-block;  /*Allows multiple buttons on the same line*/
-
-    /*Font*/
-    color: white;     /*Text color*/
-    font-size: 1rem;    /*Font size*/
-}
-
-#home-banner-text button:hover {
-    /*Text color when hovering on button*/
-    color: #55a7d6;
-}
-
-/*Icons and links*/
-
-.platform-links a{
-    text-decoration: none; /*Gets rid of that wierd link underscore between images*/
-}
-
-.platform-links img {
-    /*Alignment*/
-    position: relative;
-    display: block;
-    top: 10px;
-    height: 50px;
-    padding: 5px;
-    cursor: pointer;
-    display: inline-block;  /*Allows multiple icons on the same line*/
-}
 
 /*About banner*/
-
 #about-banner-text {
     position: absolute;
     text-align: center;
@@ -220,18 +115,12 @@ nav a:hover {
     font-size: 4rem;
 }
 
+/*-------------------------------FOOTER---------------------------------------*/
 
-
-/*4 - FOOTER*/
-
-/*Footer*/
 .footer {
-    text-align: center;
+    text-align: center;             /*Footer*/
     padding: 5px;
     background-color: #1e1e1e;
     color: #ffffff;
     margin-top: 2%;
 }
-
-
-/*----------About---------*/

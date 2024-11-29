@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- HEAD -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,59 +12,51 @@
 
 </head>
 
-<!-- BODY -->
+<!----------------------------------NAVBAR------------------------------------->
+
 <body>
-    <!-- Navigation section -->
-    <header>
-        <nav>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">Samuel Pattinson</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link" href="pages/about.html">About</a>
+              <a class="nav-link" href="pages/contact.html">Portfolio</a>
+              <a class="nav-link" href="#">Contact</a>
             </div>
-        </nav>
-    </header>
+          </div>
+        </div>
+      </nav>
 
+<!----------------------------------BANNER------------------------------------->
 
-    <!-- Main section -->
     <main>
-        <!--Banner-->
-        <div class="banner1" id="banner-aurora">
-            <!--Nest text/button/icons on top of image-->
-            <div id="home-banner-text">
-                <!--Intro text-->
-                <h2>Hi there, I'm</h2>
-                <h1>Samuel Pattinson</h1>
-                <p>
-                    I'm a passionate programmer with an exciting portfolio of projects!
-                    <br>See below to discover more about what i've been working on
-                </p>
-                
-                <!--Button-->
-                <a href="#">
-                    <button class="download">Download my CV</button>
-                </a>
-                
-                <!--Icons-->
-                <div class="platform-links">
-                    <a href="https://github.com/skully880">
-                        <img src="images\github-mark-white.png">
-                    </a>
-                    <a href="https://www.linkedin.com/in/s-pattinson/">
-                        <img src="images\linkedin-white.png">
-                    </a>
-                    <a href="https://www.youtube.com/@Skully880">
-                        <img src="images\youtube-white.png">
-                    </a>
+        <div class="container-fluid" >
+            <div class="banner row" id="banner-image-aurora">
+                <div class="col" id="home-text">
+                    <h2>Hi there, I'm</h2>
+                    <h1>Samuel Pattinson</h1>
+                    <p>
+                        I'm a passionate programmer with an exciting 
+                        portfolio of projects!
+                        <br>
+                        See below to discover more about me and what i've 
+                        been working on
+                    </p>
                 </div>
             </div>
         </div>
 
+<!-----------------------------------CARDS------------------------------------->
+
+
         <!-- Overview cards x3 w/ Bootstrap -->
         <div class="container"> <!--Adds padding between edge and viewport-->
             <div class="row gy-3 mt-2">
-
                 <!--4 units out of 12, regardless of screen size-->
                 <div class="col-md-4">
                     <!-- About-->
@@ -103,33 +94,18 @@
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-        </div>
-
-        <!-- Skills slider -->
-        <div>
-
-
-
         </div>
     </main>
     
+<!----------------------------------FOOTER------------------------------------->
 
-    <!-- Footer -->
     <footer>
         <div class="footer">
             <small>Last updated: Oct 2024</small>
         </div>
     </footer>
+
+<!----------------------------------------------------------------------------->
 
     <!-- JavaScript Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
