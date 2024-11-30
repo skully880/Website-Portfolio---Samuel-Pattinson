@@ -117,10 +117,15 @@ body, html {
 
 /*-------------------------------FOOTER---------------------------------------*/
 
-.footer {
-    text-align: center;             /*Footer*/
-    padding: 5px;
-    background-color: #1e1e1e;
+.footer {  
+    background-color: #000;
     color: #ffffff;
+    height: 30px;
     margin-top: 2%;
+}
+
+#footer-text {
+    position: static;
+    text-align: center;
+    vertical-align: bottom;
 }
