@@ -23,9 +23,35 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
+
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link" href="about.html">About</a>
-                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="about.html">About</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Skills</a></li>
+                            <li><a class="dropdown-item" href="#">Contact</a></li>
+                            <li><a class="dropdown-item" href="#">Download my CV</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Portfolio
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Portfolio Website</a></li>
+                            <li><a class="dropdown-item" href="#">2D Space Game</a></li>
+                            <li><a class="dropdown-item" href="#">AI Project</a></li>
+                        </ul>
+                    </li>
+
                 </div>
             </div>
         </div>
@@ -52,46 +78,40 @@
 
 <!-----------------------------------CARDS------------------------------------->
 
-
         <!-- Overview cards x3 w/ Bootstrap -->
         <div class="container"> <!--Adds padding between edge and viewport-->
             <div class="row gy-3 mt-2">
                 <!--4 units out of 12, regardless of screen size-->
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <!-- About-->
                     <div class="card">
-                        <img src="images\placeholder.jpg" class="card-img-top" alt="...">
+                        <img src="images/self-portrait.jpg" class="card-img-top" alt="..." id="portrait-index">
                         <div class="card-body">
                             <h5 class="card-title">About</h5>
-                            <p class="card-text">Learn more about who I am and what skills I bring to the table</p>
-                            <a href="about.html" class="btn btn-primary">Learn more</a>
+                            <p class="card-text">Learn more about who I am, what skills I have, and how to contact me</p>
+                            <a href="about.html" class="btn btn-dark my-1">About</a>
+                            <a href="about.html" class="btn btn-primary my-1">Skills</a>
+                            <a href="about.html" class="btn btn-primary my-1">Contact</a>
+                            <a href="about.html" class="btn btn-primary my-1">Download my CV</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <!-- Projects -->
                     <div class="card">
-                        <img src="images\placeholder.jpg" class="card-img-top" alt="...">
+                        <img src="images/spacegame-snapshot.png" class="card-img-top" alt="..." id="portrait-index">
                         <div class="card-body">
                             <h5 class="card-title">Portfolio</h5>
                             <p class="card-text">Discover some of the exciting projects I've' been working on</p>
-                            <a href="portfolio.html" class="btn btn-primary">Learn more</a>
+                            <a href="portfolio.html" class="btn btn-dark my-1">Portfolio</a>
+                            <a href="portfolio.html" class="btn btn-primary my-1">Portfolio Website</a>
+                            <a href="portfolio.html" class="btn btn-primary my-1">2D Space Game</a>
+                            <a href="portfolio.html" class="btn btn-primary my-1">AI Project</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-4">
-                    <!-- Contact -->
-                    <div class="card">
-                        <img src="images\placeholder.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Contact</h5>
-                            <p class="card-text">Find out how to get in contact or ask me any questions</p>
-                            <a href="contact.html" class="btn btn-primary">Learn more</a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </main>
