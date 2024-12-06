@@ -26,22 +26,22 @@ body, html {
 /*Banner images*/
 #banner-image-aurora {
     /*Background image source*/
-    background-image: url(images/placeholder.jpg);  
+    background-image: url(images/placeholder.png);  
 }
 
 #banner-image-earth {
     /*Background image source*/
-    background-image: url(images/placeholder.jpg);   
+    background-image: url(images/placeholder.png);   
 }
 
 #banner-image-scenic {
     /*Background image source*/
-    background-image: url(images/placeholder.jpg);   
+    background-image: url(images/placeholder.png);   
 }
 
 #banner-image-horizon {
     /*Background image source*/
-    background-image: url(images/placeholder.jpg);   
+    background-image: url(images/placeholder.png);   
 }
 
 #home-text {
