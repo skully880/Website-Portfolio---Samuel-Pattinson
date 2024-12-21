@@ -24,24 +24,9 @@ body, html {
 }
 
 /*Banner images*/
-#banner-image-aurora {
+#banner-image-placeholder {
     /*Background image source*/
-    background-image: url(images/placeholder.png);  
-}
-
-#banner-image-earth {
-    /*Background image source*/
-    background-image: url(images/placeholder.png);   
-}
-
-#banner-image-scenic {
-    /*Background image source*/
-    background-image: url(images/placeholder.png);   
-}
-
-#banner-image-horizon {
-    /*Background image source*/
-    background-image: url(images/placeholder.png);   
+    background-image: url(/images/placeholder.png);  
 }
 
 #home-text {
@@ -144,4 +129,13 @@ img#portrait-about {
     max-height: 400px;
     object-fit: cover;
     object-position: center 40%;
+}
+
+
+#icon {
+    height: 120px;
+}
+
+#border {
+    /*border: solid;*/
 }
