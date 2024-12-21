@@ -26,7 +26,7 @@ body, html {
 /*Banner images*/
 #banner-image-placeholder {
     /*Background image source*/
-    background-image: url(/images/placeholder.png);  
+    background-image: url(images/placeholder.png);  
 }
 
 #home-text {
